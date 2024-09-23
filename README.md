@@ -137,8 +137,17 @@ sudo ./load_monitor.sh
 
 cron 작업을 추가하여 주기적으로 부하를 모니터링할 수 있습니다.
 
+## 로그 처리
 ```bash
-* * * * * /path/to/load_monitor.sh >> /var/log/load_monitor.log
+# 실행 권한 부여
+chmod +x /home/username/load_monitor.sh
+
+# 크론탭 설정
+crontab -e
+* * * * * /home/username/load_monitor.sh >> /var/log/load_monitor.log 2>&1
+
+# 로그 파일 열기
+cat /var/log/load_monitor.log
 ```
 
 ## 결론
