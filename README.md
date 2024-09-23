@@ -56,6 +56,12 @@ fi
 ```
 
 ![11_720](https://github.com/user-attachments/assets/0dc5affb-953a-4403-8a93-addcdbe06ca6)
+```bash
+# 권한 부여
+chmod u+x check_average_load.sh
+# 실행
+sudo ./check_average_load.sh
+```
 
 2. 부하 추세 분석 스크립트
 <br> 이 스크립트는 **1분, 5분, 15분 동안의 평균 부하를 분석하고, 최근 부하 추세를 확인**합니다.
@@ -86,6 +92,13 @@ fi
 
 ![22_720](https://github.com/user-attachments/assets/7b0319ff-6b52-482d-b7f4-4d6e6c70243e)
 
+```bash
+# 권한 부여
+chmod u+x analyze_load_trends.sh
+# 실행
+sudo ./analyze_load_trends.sh
+```
+
 3. 부하 모니터링 및 경고 시스템
 <br> 이 스크립트는 **주기적으로 평균 부하를 확인하고, 설정된 임계치를 초과하면 경고 메시지를 출력**합니다. cron 작업과 결합하여 주기적인 시스템 모니터링에 활용할 수 있습니다.
 
@@ -114,6 +127,13 @@ fi
 
 ![33_720](https://github.com/user-attachments/assets/c55cdd15-91c8-4d33-93a3-639428e19c8d)
 
+
+```bash
+# 권한 부여
+chmod u+x load_monitor.sh
+# 실행
+sudo ./load_monitor.sh
+```
 
 cron 작업을 추가하여 주기적으로 부하를 모니터링할 수 있습니다.
 
